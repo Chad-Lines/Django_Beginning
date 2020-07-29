@@ -8,4 +8,5 @@ urlpatterns = [
         views.post_list,    # This is the post_list view in the views.py file
         name='post_list'    # This is the name of the URL used to identify the view
     ),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),  # Path for a dedicated post view
 ]
